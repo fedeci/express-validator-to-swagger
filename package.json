@@ -1,0 +1,11 @@
+{
+  "name": "express-validator-to-swagger",
+  "version": "0.0.1",
+  "author": "Federico Ciardi <fed.ciardi@gmail.com>",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}
