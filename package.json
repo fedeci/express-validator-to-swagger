@@ -3,9 +3,16 @@
   "version": "0.0.1",
   "author": "Federico Ciardi <fed.ciardi@gmail.com>",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
   "scripts": {
+    "build": "tsc",
+    "clean": "git clean -Xf src ",
+    "prepublishOnly": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
 }
