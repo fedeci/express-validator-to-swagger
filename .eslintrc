@@ -1,0 +1,67 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "prettier"
+  ],
+  "extends": [
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {},
+  "rules": {
+    // prettier rules
+    "prettier/prettier": "error",
+
+    // eslint rules
+    "no-empty": ["error", {
+      "allowEmptyCatch": true
+    }],
+    "eqeqeq": ["error", "always", {
+      "null": "ignore"
+    }],
+    "no-caller": "error",
+    "no-new": "error",
+    "no-with": "error",
+    "brace-style": ["error", "1tbs", {
+      "allowSingleLine": true
+    }],
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": "off",
+    "no-trailing-spaces": "error",
+    "key-spacing": "error",
+    "keyword-spacing": "error",
+    "new-cap": "error",
+    "no-bitwise": "error",
+    "space-before-function-paren": ["error", "never"],
+    "space-infix-ops": "error",
+    "space-unary-ops": ["error", {
+      "words": true,
+      "nonwords": false
+    }],
+
+    "no-use-before-define": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+
+    "sort-imports": ["error", {
+      "ignoreDeclarationSort": true
+    }],
+    "import/newline-after-import": ["error"],
+    "import/order": ["error", {
+      "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+      "newlines-between": "never"
+    }],
+    "@typescript-eslint/no-require-imports": "error"
+  }
+}
